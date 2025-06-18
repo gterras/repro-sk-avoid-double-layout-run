@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 
-export const load = async () => {
+export const load = () => {
 	console.log('+page.server run');
 	const possible_routes = ['a', 'b'];
 	// simulates route selection logic so that destination is SSRed
